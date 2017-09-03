@@ -18,16 +18,15 @@ To build a working version of the framwork, I need the following components:
 
 - `io` to read, write and manipulate streams, files and directories.
 - `syntax` to parse structured strings (mainly used to parse command line args).
-- `command` to build command line apps as easy as possible.
+- `command` to build command line apps and test them easily.
 - `functional` because I liked functional programming and [Ramda](http://ramdajs.com)
-- `test` to easily test commands.
 
 ### IO
 
 - [X] Should create, copy, move and delete files and directories.
 - [X] Should list and find files in directories.
 - [X] Should read from and write to streams and files.
-- [ ] Should mock files and directories into memory (useful for testing).
+- [X] Should mock files and directories into memory (useful for testing).
 - [ ] Should handle interactive console.
 - [ ] Should mock interactive console (useful for testing).
 
@@ -47,14 +46,15 @@ To build a working version of the framwork, I need the following components:
 
 A command should be able to:
 
-- [ ] Read from and write to console.
-- [ ] Easily define and parse command line args.
-- [ ] Auto complete command line args.
-- [ ] Show detailed help message.
-- [ ] Be lazy (writing changes to Filesystem only if everything goes well).
-- [ ] Call another command and pass raw or parsed arguments.
+- [X] Read from and write to console.
+- [X] Easily define and parse command line args.
+- [X] Show detailed help message.
+- [X] Call another command and pass raw or parsed arguments.
+- [X] Should be able to test any command.
 - [ ] Compose other commands (pipe, parallel, switch, ...).
+- [ ] Be lazy (writing changes to Filesystem only if everything goes well).
+- [ ] Auto complete command line args.
 
-### Test
+# The Tarsana Command
 
-- [ ] Should be able to test any command.
+...

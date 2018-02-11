@@ -16,19 +16,23 @@ The PHP language was chosen simply because I wanted to rewrite my [lumen-generat
 
 To build a working version of the framwork, I need the following components:
 
-- `io` to read, write and manipulate streams, files and directories.
+- `filesystem` to read, write and manipulate streams, files and directories.
 - `syntax` to parse structured strings (mainly used to parse command line args).
+- `terminal` to read from, write to, and handle interactions on the console.
 - `command` to build command line apps and test them easily.
+
+In the process, I built these useful components:
+
 - `functional` because I liked functional programming and [Ramda](http://ramdajs.com)
 
-### IO
+
+### Filesystem
 
 - [X] Should create, copy, move and delete files and directories.
 - [X] Should list and find files in directories.
 - [X] Should read from and write to streams and files.
 - [X] Should mock files and directories into memory (useful for testing).
-- [ ] Should handle interactive console.
-- [ ] Should mock interactive console (useful for testing).
+
 
 ### Syntax
 
@@ -36,11 +40,14 @@ To build a working version of the framwork, I need the following components:
 - [X] Should define syntaxes using just a string.
 - [X] Should define custom syntaxes easily.
 
-### Functional
 
-- [X] Should define useful functions (inspired from RamdaJS).
-- [X] Should have a flexible and Lazy Stream class.
-- [X] Should be as efficient as possible (sacrifice clean code).
+### Terminal
+
+- [ ] Should write to console with formating and colors.
+- [ ] Should read inputs from the console: character, key, word, line.
+- [ ] Should handle interactive console.
+- [ ] Should mock interactive console (useful for testing).
+
 
 ### Command
 
@@ -54,6 +61,12 @@ A command should be able to:
 - [ ] Compose other commands (pipe, parallel, switch, ...).
 - [ ] Be lazy (writing changes to Filesystem only if everything goes well).
 - [ ] Auto complete command line args.
+
+### Functional
+
+- [X] Should define useful functions (inspired from RamdaJS).
+- [X] Should have a flexible and Lazy Stream class.
+- [X] Should be as efficient as possible (sacrifice clean code).
 
 # The Tarsana Command
 

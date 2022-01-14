@@ -26,7 +26,7 @@ In the process, I built these useful components:
 - `functional` because I liked functional programming and [Ramda](http://ramdajs.com)
 
 
-### Filesystem
+### [Filesystem](https://github.com/tarsana/filesystem)
 
 - [X] Should create, copy, move and delete files and directories.
 - [X] Should list and find files in directories.
@@ -34,14 +34,14 @@ In the process, I built these useful components:
 - [X] Should mock files and directories into memory (useful for testing).
 
 
-### Syntax
+### [Syntax](https://github.com/tarsana/syntax)
 
 - [X] Should parse and dump basic types: Boolean, Number, Array and Object.
 - [X] Should define syntaxes using just a string.
 - [X] Should define custom syntaxes easily.
 
 
-### Terminal
+### [Terminal](https://github.com/tarsana/terminal)
 
 - [ ] Should write to console with formating and colors.
 - [ ] Should read inputs from the console: character, key, word, line.
@@ -49,8 +49,7 @@ In the process, I built these useful components:
 - [ ] Should mock interactive console (useful for testing).
 
 
-### Command
-
+### [Command](https://github.com/tarsana/command)
 A command should be able to:
 
 - [X] Read from and write to console.
@@ -62,7 +61,7 @@ A command should be able to:
 - [ ] Be lazy (writing changes to Filesystem only if everything goes well).
 - [ ] Auto complete command line args.
 
-### Functional
+### [Functional](https://github.com/tarsana/functional)
 
 - [X] Should define useful functions (inspired from RamdaJS).
 - [X] Should have a flexible and Lazy Stream class.
